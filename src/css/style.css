@@ -1,0 +1,82 @@
+body{
+  background-color: #000000;
+  overflow: hidden;
+}
+
+
+
+main .jogo{
+  display: none;
+  height: 100vh;
+}
+
+main .jogo.selecionado{
+  display: block;
+}
+
+main .jogo .imagem{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.conteudo{
+  position: absolute;
+  top: 0;
+  left: 230px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 380px;
+  z-index: 1;
+}
+
+.conteudo .nome-jogo{
+ 
+  color: #ffffffff;
+  font-size: 48px;
+  font-family: "Secular One";
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.conteudo .descricao{
+  color: #ffffffff;
+  font-family: "Rubik";
+  line-height: 24px; 
+}
+
+
+.botoes{
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 180px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(0, 0,0,0.3);
+ 
+  
+}
+
+.botoes .botao{
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 55%;
+}
+
+.botoes .botao img{
+  border-radius: 55%;
+}
+
+.botoes .botao.selecionado{
+  transform: scale(1.1);
+  
+}
