@@ -23,7 +23,7 @@ main .jogo .imagem{
 .conteudo{
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 250px;
 
   display: flex;
   flex-direction: column;
